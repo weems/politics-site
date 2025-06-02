@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Candidate Name for Office</title>
+  <link href="assets/styles.css" rel="stylesheet">
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+  <!-- Hero -->
+  <section class="bg-blue-800 text-white py-16">
+    <div class="container mx-auto px-4 text-center">
+      <h1 class="text-4xl font-bold mb-4">Candidate Name for Office</h1>
+      <p class="text-xl mb-8">A Vision for Our Community. A Voice for the People.</p>
+      <a href="#donate" class="bg-yellow-400 text-blue-900 px-6 py-3 rounded shadow font-semibold hover:bg-yellow-300">Donate Now</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="py-12 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl font-bold mb-4">Meet Candidate Name</h2>
+      <p class="text-lg">Brief bio and message about the candidate’s background, experiences, and passion for serving the community.</p>
+    </div>
+  </section>
+
+  <!-- Issues -->
+  <section class="py-12 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl font-bold mb-4">Key Issues</h2>
+      <ul class="space-y-4">
+        <li class="bg-white shadow rounded p-4">Education: Commitment to our schools and students.</li>
+        <li class="bg-white shadow rounded p-4">Economy: Building a stronger, fairer economy for all.</li>
+        <li class="bg-white shadow rounded p-4">Healthcare: Affordable healthcare for every family.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Events (Alpine.js demo) -->
+  <section class="py-12 bg-white" x-data="{ open: false }">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl font-bold mb-4">Upcoming Events</h2>
+      <button @click="open = !open" class="text-blue-700 underline mb-2">Show/Hide Events</button>
+      <div x-show="open" class="space-y-2 transition-all">
+        <div class="bg-gray-100 rounded p-4">Town Hall Meeting – June 14</div>
+        <div class="bg-gray-100 rounded p-4">Community Clean Up – June 21</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="py-12 bg-gray-50" id="contact">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl font-bold mb-4">Contact</h2>
+      <form class="max-w-lg mx-auto space-y-4">
+        <input class="w-full px-4 py-2 border rounded" type="text" placeholder="Your Name" required>
+        <input class="w-full px-4 py-2 border rounded" type="email" placeholder="Your Email" required>
+        <textarea class="w-full px-4 py-2 border rounded" placeholder="Your Message" required></textarea>
+        <button class="bg-blue-800 text-white px-6 py-2 rounded font-semibold hover:bg-blue-700" type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-6 text-center text-gray-500">© 2025 Candidate Name. All rights reserved.</footer>
+</body>
+</html>
