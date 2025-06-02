@@ -1,0 +1,13 @@
+{
+  "name": "politics-site",
+  "version": "1.0.0",
+  "description": "A professional political campaign website using Tailwind CSS and Alpine.js",
+  "scripts": {
+    "dev": "tailwindcss -i ./src/css/tailwind.css -o ./public/assets/styles.css --watch",
+    "build": "tailwindcss -i ./src/css/tailwind.css -o ./public/assets/styles.css --minify"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "tailwindcss": "^3.4.0"
+  }
+}
